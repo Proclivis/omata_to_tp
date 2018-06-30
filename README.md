@@ -35,3 +35,9 @@ Second, the math has division by subtracted values, so there is some protection 
 Finally, due to limits of resolution, there are delta values of zero. Since the tool works
 by adding power to all records, if there is no useful delta, the last power is used.
 Otherwise, the TSS will not be correct without deleting records, which this does not do.
+
+## Compiling
+Download the Dynastream SDK for fit files.
+Put this project in cs/Examples
+Open it up and compile it.
+Only tested on Mac using FitSDKRelease_20.66.00.
