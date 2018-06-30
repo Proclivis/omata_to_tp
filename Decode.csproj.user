@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Project</StartAction>
+    <StartArguments>--draftingpercentage=15 --infile=/Users/michaeljones/Desktop/180629003324.fit --outfile=/Users/michaeljones/Desktop/180629003324-p.fit</StartArguments>
+  </PropertyGroup>
+</Project>
