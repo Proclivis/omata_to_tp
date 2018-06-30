@@ -8,8 +8,8 @@
     <ProjectGuid>{7397E11F-301C-48CF-B2B7-69F8E3213B2D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>decode</RootNamespace>
-    <AssemblyName>decode</AssemblyName>
+    <RootNamespace>translate</RootNamespace>
+    <AssemblyName>translate</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -67,7 +67,7 @@
     <Compile Include="..\..\Dynastream\Utility\*">
       <Link>Utility\(FileName)</Link>
     </Compile>
-    <Compile Include="DecodeDemo.cs" />
+    <Compile Include="Translate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

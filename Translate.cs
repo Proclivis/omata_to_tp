@@ -57,7 +57,7 @@ class Options
 
 }
 
-namespace DecodeDemo
+namespace Translate
 {
     class Program
     {
