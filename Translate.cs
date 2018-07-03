@@ -325,7 +325,12 @@ namespace Translate
                 currentSpeed = (float)GetValue(recordMessage, RecordMesg.FieldDefNum.Speed);
                 currentTime = (uint)GetValue(recordMessage, RecordMesg.FieldDefNum.Timestamp);
 
-                if (lastDistance != currentDistance && lastTime != currentTime)
+                if ((currentTime - lastTime) > 4)
+                {
+                    // Start over if gap.
+                    haveAltitude = false;
+                }
+                else if (lastDistance != currentDistance && lastTime != currentTime)
                 {
                     slope = ((currentAltitude - lastAltitude) / (currentDistance - lastDistance));
                     potentialPower = slope * currentSpeed * mass * 9.8F;
