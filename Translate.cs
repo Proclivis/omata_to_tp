@@ -55,6 +55,11 @@ class Options
     [Option(Default = 0.0F)]
     public float DraftingPercentage { get; set; }
 
+    [Option(Default = 70.0F)]
+    public float BodyWeight { get; set; }
+
+    [Option(Default = 10.0F)]
+    public float BikeWeight { get; set; }
 }
 
 namespace Translate
@@ -303,7 +308,7 @@ namespace Translate
                 uint currentTime = 0;
                 float slope = 0.0F;
                 //float mass = 83.5F; // Commute
-                float mass = 80.0F; // Seven
+                float mass = options.BodyWeight + options.BikeWeight;
                 float power = 0.0F;
                 float potentialPower = 0.0F;
                 float keneticPower = 0.0F;
